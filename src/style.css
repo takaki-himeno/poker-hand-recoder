@@ -1,0 +1,69 @@
+.wrapper {
+	margin: 0 auto;
+	padding: 50px;
+}
+
+@media screen and (min-width: 1300px) {
+	.wrapper {
+		display: flex;
+	}
+	.result {
+		margin-left: 50px;
+	}
+}
+.display {
+	width: 600px;
+	margin-left: 40px;
+}
+.palette {
+	border-collapse: collapse;
+	border-radius: 10px;
+}
+td {
+	width: 44px;
+	height: 44px;
+	text-align: center;
+}
+.rec {
+	cursor: pointer;
+	border:  1px solid gray;
+	padding: 3px 5px;
+	text-align: center;
+	border-radius: 5px;
+}
+.result table {
+	border-collapse: collapse;
+}
+.result table td{
+	width: 6em;
+}
+.bar-wrapper,
+.ranklabel,
+.rank-ratio-wrapper {
+	display: flex;
+}
+.bar-wrapper {
+	padding-top: 20px;
+}
+.graph {
+	height: 400px;
+}
+.graph .bar-wrapper {
+	height:  300px;
+	align-items: flex-end;
+}
+.graph .bar-wrapper .bar {
+	background: #99f;
+	width: calc(100% / 13);
+	margin: 0 15px;
+	transition: height .2s ease-out;
+}
+.ranklabel > div {
+	width: calc(100% / 13);
+	text-align: center;
+}
+.rank-ratio {
+	width: calc(100% / 13);
+	text-align:  center;
+	font-size: 10px;
+}
