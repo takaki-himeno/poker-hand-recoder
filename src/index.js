@@ -94,8 +94,12 @@ $('.button').click(function() {
 
 // 押された回数に応じた色をパレットに塗る
 function makeColor(id) {
-	$('.' + id).css({
+	$('.' + id)
+	.css({
 		backgroundColor: 'rgba(255, 0, 0, ' + records[id] / 10 + ')'
+	})
+	.attr({
+		'data-count': records[id]
 	});	
 }
 
